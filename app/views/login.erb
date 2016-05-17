@@ -1,0 +1,16 @@
+<h2>Login</h2>
+
+<%= @error_message if @error_message %>
+<form method="POST" action="/login">
+    <div class="form-group">
+        <lable for="username">Username</lable>
+        <input type="text" id="username" name="username">
+    </div>
+    <div class="form-group">
+        <lable for="password">Password</lable>
+        <input type="password" id="password" name="password">
+    </div>    
+    <div class="form-group">
+        <button class="button" type="submit">Login</button>
+    </div>
+</form>
